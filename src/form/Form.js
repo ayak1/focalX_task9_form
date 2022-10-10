@@ -11,9 +11,11 @@ const Form = () => {
         address:''
     })
     const inputHandler = (e) => {
-        let formInputName = e.target.name;
-        let formInputValue = e.target.value;
-        setForm(form => ({...form, [formInputName]:formInputValue}))
+        let {name, value} = e.target;
+        setForm(previousState => ({... previousState, [name]:value}))
+        // let formInputName = e.target.name;
+        // let formInputValue = e.target.value;
+        // setForm(form => ({...form, [formInputName]:formInputValue}))
     }
     const handleSubmit = (e) => {
         e.preventDefault()
