@@ -24,31 +24,31 @@ const Form = () => {
         <form onSubmit={(e)=> handleSubmit(e)} style={{display:'flex',flexDirection:'column'}}>
            <div> 
             <label>First Name :</label>
-            <input name='firstName' value={form.firstName} onChange={(e)=>inputHandler(e)}/>
+            <input placeholder='First Name' name='firstName' value={form.firstName} onChange={(e)=>inputHandler(e)}/>
            </div>
            <div> 
             <label>Last Name :</label>
-            <input name='lastName' value={form.lastName} onChange={(e)=>inputHandler(e)}/>
+            <input placeholder='Last Name' name='lastName' value={form.lastName} onChange={(e)=>inputHandler(e)}/>
            </div>
            <div>
             <label>Education :</label>
-            <input name='education' value={form.education} onChange={(e)=>inputHandler(e)}/>
+            <input placeholder='Education' name='education' value={form.education} onChange={(e)=>inputHandler(e)}/>
            </div>
            <div>
             <label>Email :</label>
-            <input name='email' value={form.email} onChange={(e)=>inputHandler(e)}/>
+            <input placeholder='Email' name='email' value={form.email} onChange={(e)=>inputHandler(e)}/>
            </div>
            <div>
             <label>Phone :</label>
-            <input name='phone' value={form.phone} onChange={(e)=>inputHandler(e)}/>
+            <input placeholder='Phone' name='phone' value={form.phone} onChange={(e)=>inputHandler(e)}/>
            </div>
            <div>
             <label>Experiance :</label>
-            <input name='experiance' value={form.experiance} onChange={(e)=>inputHandler(e)}/>
+            <input placeholder='Experiance' name='experiance' value={form.experiance} onChange={(e)=>inputHandler(e)}/>
            </div>
            <div>
             <label>Address :</label>
-            <input name='address' value={form.address} onChange={(e)=>inputHandler(e)}/>
+            <input placeholder='Address' name='address' value={form.address} onChange={(e)=>inputHandler(e)}/>
            </div>
             <input className='btn' type='submit' value='submit'/>
         </form>
